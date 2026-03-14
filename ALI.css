@@ -1,0 +1,149 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:linear-gradient(#F8F5FC,#324051);
+    background-repeat: no-repeat;
+
+  .typing-quote {
+  display: inline-block;
+  min-width: 260px;          /* ← هذا السطر مهم جدًا عشان ما يهتز النص يمين ويسار */
+  white-space: nowrap;
+  position: relative;
+}
+
+.typing-quote::after {
+  content: "|";
+  position: absolute;
+  margin-left: 4px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+}
+
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+  background-color: #324051;
+    box-shadow: 0 0 30px 10px #324051;
+     border:solid 0.5px;
+  border-radius: 2px;
+  border-color: #324051;
+     display: flex;
+        padding: 15px 30px;
+}
+.image img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: solid 4px;
+    border-color:#324051;
+    box-shadow:0 0 20px 5px #2e4057;
+}
+
+nav a{
+    margin:0 10px;
+    text-decoration:none;
+color: white;
+    
+}
+
+.nav :hover{
+background: linear-gradient(#F8F5FC,#324051);
+  height: 40px;
+  cursor: pointer;
+  background-size:20px;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px;
+    color:slategrey;
+}
+
+.hero h1{
+    font-size:40px;
+    color: #2e4057;
+}
+
+.btn{
+ 
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    text-decoration:none;
+    background-color:#324051;
+    box-shadow: 0 0 10px 2px  rgba(46, 64, 87);
+   
+}
+.links a{
+    color: white;
+    
+}
+.links a:hover{
+    color: #534ef4;
+}
+.ali{
+    background-color: #534ef4;
+    text-decoration: none;
+    padding:12px 25px ;
+    border: none;
+    border-radius: 8px;
+    color:#F8F5FC;
+    box-shadow:0 0 8px 1px rgba(83,78,244);
+}
+.navbar-brand img{
+    border-radius: 20%;
+}
+.about{
+    padding:60px;
+  
+}
+
+.projects{
+    padding:60px;
+    background:#bbbdbe4f;
+    border: solid 1px;
+    border-radius: 15px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:#324051;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:  0 30px 10px rgba(0,0,0,0.1);
+    color: #F8F5FC;
+  
+}
+
+.services{
+    padding:60px;
+   background: #bbbdbe4f;
+   border-color: #F8F5FC;
+   border: solid 1PX;
+     border-radius: 15px;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;}
