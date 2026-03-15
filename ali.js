@@ -1,6 +1,6 @@
 const quoteElement = document.querySelector('.typing-quote');
 if (quoteElement) {
-  const fullText = quoteElement.textContent.trim();  // "Hi, I'm Ali" (بدون العلامات إذا بدك)
+  const fullText = quoteElement.textContent.trim();  // 
   let index = fullText.length;
   let isDeleting = true;
 
@@ -28,3 +28,16 @@ if (quoteElement) {
   // نبدأ بعد نص ثانية تقريبًا
   setTimeout(animate, 800);
 }
+const text = document.querySelector('.marquee-text');
+let pos = -text.offsetWidth; // ا
+
+function moveMarquee() {
+    pos += 0.3; //
+    if (pos >100) {
+        pos = -text.offsetWidth; // 
+    }
+    text.style.left = pos + '%';
+    requestAnimationFrame(moveMarquee);
+}
+
+moveMarquee();
