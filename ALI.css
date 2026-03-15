@@ -36,6 +36,23 @@ header{
   border-color: #324051;
      display: flex;
         padding: 15px 30px;
+    .marquee-container {
+  overflow: hidden;
+  width: 80px;   
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.marquee-text {
+  display: inline-block;
+  position: relative;
+  right: 100%;    
+}
+    .navbar-brand{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color: white;
 }
 .image img{
     width: 500px;
